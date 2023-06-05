@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
 :root {
   --padding: 1.5rem;
@@ -105,7 +105,9 @@ main {
 
 .card__list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+  gap: calc(var(--gap) / 2);
 }
 
 .card__paragraph,
@@ -119,15 +121,7 @@ main {
   color: hsl(var(--accent-color));
   fill: hsl(var(--accent-color));
   text-transform: uppercase;
-}
-
-.price__list__item,
-.time__list__item {
-  flex: 1;
-}
-
-.time__list__item {
-  text-align: end;
+  flex: 1 0 auto;
 }
 
 .price__span,
